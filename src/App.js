@@ -11,7 +11,7 @@ export default function App() {
   const [dc, setDc] = useState();
   useEffect(() => {
     //http://www.omdbapi.com/?i=tt3896198&apikey=33a6cf02
-    axios
+    return axios
       .get("http://www.omdbapi.com/?t=marvel&apikey=33a6cf02")
       .then((res) => {
         let duplicatedObject = [];
@@ -24,7 +24,7 @@ export default function App() {
 
   useEffect(() => {
     //http://www.omdbapi.com/?i=tt3896198&apikey=33a6cf02
-    axios
+    return axios
       .get("http://www.omdbapi.com/?t=batman&apikey=33a6cf02")
       .then((res) => {
         let duplicatedObject = [];
